@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCE7120F1C214DC500C2155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7120E1C214DC500C2155F /* main.m */; };
+		BCE712121C214DC500C2155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE712111C214DC500C2155F /* AppDelegate.m */; };
+		BCE712151C214DC500C2155F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE712141C214DC500C2155F /* ViewController.m */; };
+		BCE712181C214DC500C2155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE712161C214DC500C2155F /* Main.storyboard */; };
+		BCE7121B1C214DC500C2155F /* LBZBar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE712191C214DC500C2155F /* LBZBar.xcdatamodeld */; };
+		BCE7121D1C214DC500C2155F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE7121C1C214DC500C2155F /* Assets.xcassets */; };
+		BCE712201C214DC500C2155F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE7121E1C214DC500C2155F /* LaunchScreen.storyboard */; };
+		BCE7122B1C214DC500C2155F /* LBZBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7122A1C214DC500C2155F /* LBZBarTests.m */; };
+		BCE712361C214DC500C2155F /* LBZBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE712351C214DC500C2155F /* LBZBarUITests.m */; };
+		BCE7126E1C214E0700C2155F /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE712451C214E0700C2155F /* bitstream.c */; };
+		BCE7126F1C214E0700C2155F /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE712471C214E0700C2155F /* mask.c */; };
+		BCE712701C214E0700C2155F /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7124A1C214E0700C2155F /* QRCodeGenerator.m */; };
+		BCE712711C214E0700C2155F /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE7124B1C214E0700C2155F /* qrencode.c */; };
+		BCE712721C214E0700C2155F /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE7124D1C214E0700C2155F /* qrinput.c */; };
+		BCE712731C214E0700C2155F /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE7124F1C214E0700C2155F /* qrspec.c */; };
+		BCE712741C214E0700C2155F /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE712511C214E0700C2155F /* rscode.c */; };
+		BCE712751C214E0700C2155F /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = BCE712531C214E0700C2155F /* split.c */; };
+		BCE712761C214E0700C2155F /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE712551C214E0700C2155F /* libzbar.a */; };
+		BCE712781C214F6100C2155F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE712771C214F6100C2155F /* AVFoundation.framework */; };
+		BCE7127A1C214F7B00C2155F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE712791C214F7B00C2155F /* CoreMedia.framework */; };
+		BCE7127C1C214F8900C2155F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE7127B1C214F8900C2155F /* CoreVideo.framework */; };
+		BCE7127E1C214F9800C2155F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE7127D1C214F9800C2155F /* QuartzCore.framework */; };
+		BCE712801C214FA800C2155F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE7127F1C214FA800C2155F /* libiconv.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCE712271C214DC500C2155F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCE712021C214DC500C2155F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE712091C214DC500C2155F;
+			remoteInfo = LBZBar;
+		};
+		BCE712321C214DC500C2155F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCE712021C214DC500C2155F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE712091C214DC500C2155F;
+			remoteInfo = LBZBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCE7120A1C214DC500C2155F /* LBZBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBZBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE7120E1C214DC500C2155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCE712101C214DC500C2155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCE712111C214DC500C2155F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCE712131C214DC500C2155F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCE712141C214DC500C2155F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCE712171C214DC500C2155F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCE7121A1C214DC500C2155F /* LBZBar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LBZBar.xcdatamodel; sourceTree = "<group>"; };
+		BCE7121C1C214DC500C2155F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCE7121F1C214DC500C2155F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCE712211C214DC500C2155F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE712261C214DC500C2155F /* LBZBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBZBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE7122A1C214DC500C2155F /* LBZBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBZBarTests.m; sourceTree = "<group>"; };
+		BCE7122C1C214DC500C2155F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE712311C214DC500C2155F /* LBZBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBZBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE712351C214DC500C2155F /* LBZBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBZBarUITests.m; sourceTree = "<group>"; };
+		BCE712371C214DC500C2155F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE712451C214E0700C2155F /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		BCE712461C214E0700C2155F /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		BCE712471C214E0700C2155F /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		BCE712481C214E0700C2155F /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		BCE712491C214E0700C2155F /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		BCE7124A1C214E0700C2155F /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		BCE7124B1C214E0700C2155F /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		BCE7124C1C214E0700C2155F /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		BCE7124D1C214E0700C2155F /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		BCE7124E1C214E0700C2155F /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		BCE7124F1C214E0700C2155F /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		BCE712501C214E0700C2155F /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		BCE712511C214E0700C2155F /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		BCE712521C214E0700C2155F /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		BCE712531C214E0700C2155F /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		BCE712541C214E0700C2155F /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		BCE712551C214E0700C2155F /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		BCE712571C214E0700C2155F /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		BCE712581C214E0700C2155F /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		BCE712591C214E0700C2155F /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		BCE7125A1C214E0700C2155F /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		BCE7125B1C214E0700C2155F /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		BCE7125C1C214E0700C2155F /* QZBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBar.h; sourceTree = "<group>"; };
+		BCE7125D1C214E0700C2155F /* QZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBarImage.h; sourceTree = "<group>"; };
+		BCE7125E1C214E0700C2155F /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		BCE7125F1C214E0700C2155F /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		BCE712601C214E0700C2155F /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		BCE712611C214E0700C2155F /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		BCE712621C214E0700C2155F /* zbargtk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbargtk.h; sourceTree = "<group>"; };
+		BCE712631C214E0700C2155F /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		BCE712641C214E0700C2155F /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		BCE712651C214E0700C2155F /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		BCE712661C214E0700C2155F /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		BCE712671C214E0700C2155F /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		BCE712681C214E0700C2155F /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		BCE712691C214E0700C2155F /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		BCE7126A1C214E0700C2155F /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		BCE7126B1C214E0700C2155F /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		BCE7126C1C214E0700C2155F /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		BCE7126D1C214E0700C2155F /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		BCE712771C214F6100C2155F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BCE712791C214F7B00C2155F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BCE7127B1C214F8900C2155F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BCE7127D1C214F9800C2155F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BCE7127F1C214FA800C2155F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCE712071C214DC500C2155F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE712801C214FA800C2155F /* libiconv.tbd in Frameworks */,
+				BCE7127E1C214F9800C2155F /* QuartzCore.framework in Frameworks */,
+				BCE7127C1C214F8900C2155F /* CoreVideo.framework in Frameworks */,
+				BCE7127A1C214F7B00C2155F /* CoreMedia.framework in Frameworks */,
+				BCE712781C214F6100C2155F /* AVFoundation.framework in Frameworks */,
+				BCE712761C214E0700C2155F /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE712231C214DC500C2155F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE7122E1C214DC500C2155F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCE712011C214DC500C2155F = {
+			isa = PBXGroup;
+			children = (
+				BCE7127F1C214FA800C2155F /* libiconv.tbd */,
+				BCE7127D1C214F9800C2155F /* QuartzCore.framework */,
+				BCE7127B1C214F8900C2155F /* CoreVideo.framework */,
+				BCE712791C214F7B00C2155F /* CoreMedia.framework */,
+				BCE712771C214F6100C2155F /* AVFoundation.framework */,
+				BCE7120C1C214DC500C2155F /* LBZBar */,
+				BCE712291C214DC500C2155F /* LBZBarTests */,
+				BCE712341C214DC500C2155F /* LBZBarUITests */,
+				BCE7120B1C214DC500C2155F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCE7120B1C214DC500C2155F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7120A1C214DC500C2155F /* LBZBar.app */,
+				BCE712261C214DC500C2155F /* LBZBarTests.xctest */,
+				BCE712311C214DC500C2155F /* LBZBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCE7120C1C214DC500C2155F /* LBZBar */ = {
+			isa = PBXGroup;
+			children = (
+				BCE712431C214E0700C2155F /* ZBar64 */,
+				BCE712101C214DC500C2155F /* AppDelegate.h */,
+				BCE712111C214DC500C2155F /* AppDelegate.m */,
+				BCE712131C214DC500C2155F /* ViewController.h */,
+				BCE712141C214DC500C2155F /* ViewController.m */,
+				BCE712161C214DC500C2155F /* Main.storyboard */,
+				BCE7121C1C214DC500C2155F /* Assets.xcassets */,
+				BCE7121E1C214DC500C2155F /* LaunchScreen.storyboard */,
+				BCE712211C214DC500C2155F /* Info.plist */,
+				BCE712191C214DC500C2155F /* LBZBar.xcdatamodeld */,
+				BCE7120D1C214DC500C2155F /* Supporting Files */,
+			);
+			path = LBZBar;
+			sourceTree = "<group>";
+		};
+		BCE7120D1C214DC500C2155F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7120E1C214DC500C2155F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCE712291C214DC500C2155F /* LBZBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCE7122A1C214DC500C2155F /* LBZBarTests.m */,
+				BCE7122C1C214DC500C2155F /* Info.plist */,
+			);
+			path = LBZBarTests;
+			sourceTree = "<group>";
+		};
+		BCE712341C214DC500C2155F /* LBZBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCE712351C214DC500C2155F /* LBZBarUITests.m */,
+				BCE712371C214DC500C2155F /* Info.plist */,
+			);
+			path = LBZBarUITests;
+			sourceTree = "<group>";
+		};
+		BCE712431C214E0700C2155F /* ZBar64 */ = {
+			isa = PBXGroup;
+			children = (
+				BCE712441C214E0700C2155F /* libqrencode */,
+				BCE712551C214E0700C2155F /* libzbar.a */,
+				BCE712561C214E0700C2155F /* zbar */,
+				BCE712631C214E0700C2155F /* zbar.h */,
+				BCE712641C214E0700C2155F /* ZBarCameraSimulator.h */,
+				BCE712651C214E0700C2155F /* ZBarCaptureReader.h */,
+				BCE712661C214E0700C2155F /* ZBarHelpController.h */,
+				BCE712671C214E0700C2155F /* ZBarImage.h */,
+				BCE712681C214E0700C2155F /* ZBarImageScanner.h */,
+				BCE712691C214E0700C2155F /* ZBarReaderController.h */,
+				BCE7126A1C214E0700C2155F /* ZBarReaderView.h */,
+				BCE7126B1C214E0700C2155F /* ZBarReaderViewController.h */,
+				BCE7126C1C214E0700C2155F /* ZBarSDK.h */,
+				BCE7126D1C214E0700C2155F /* ZBarSymbol.h */,
+			);
+			path = ZBar64;
+			sourceTree = "<group>";
+		};
+		BCE712441C214E0700C2155F /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				BCE712451C214E0700C2155F /* bitstream.c */,
+				BCE712461C214E0700C2155F /* bitstream.h */,
+				BCE712471C214E0700C2155F /* mask.c */,
+				BCE712481C214E0700C2155F /* mask.h */,
+				BCE712491C214E0700C2155F /* QRCodeGenerator.h */,
+				BCE7124A1C214E0700C2155F /* QRCodeGenerator.m */,
+				BCE7124B1C214E0700C2155F /* qrencode.c */,
+				BCE7124C1C214E0700C2155F /* qrencode.h */,
+				BCE7124D1C214E0700C2155F /* qrinput.c */,
+				BCE7124E1C214E0700C2155F /* qrinput.h */,
+				BCE7124F1C214E0700C2155F /* qrspec.c */,
+				BCE712501C214E0700C2155F /* qrspec.h */,
+				BCE712511C214E0700C2155F /* rscode.c */,
+				BCE712521C214E0700C2155F /* rscode.h */,
+				BCE712531C214E0700C2155F /* split.c */,
+				BCE712541C214E0700C2155F /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		BCE712561C214E0700C2155F /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				BCE712571C214E0700C2155F /* Decoder.h */,
+				BCE712581C214E0700C2155F /* Exception.h */,
+				BCE712591C214E0700C2155F /* Image.h */,
+				BCE7125A1C214E0700C2155F /* ImageScanner.h */,
+				BCE7125B1C214E0700C2155F /* Processor.h */,
+				BCE7125C1C214E0700C2155F /* QZBar.h */,
+				BCE7125D1C214E0700C2155F /* QZBarImage.h */,
+				BCE7125E1C214E0700C2155F /* Scanner.h */,
+				BCE7125F1C214E0700C2155F /* Symbol.h */,
+				BCE712601C214E0700C2155F /* Video.h */,
+				BCE712611C214E0700C2155F /* Window.h */,
+				BCE712621C214E0700C2155F /* zbargtk.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCE712091C214DC500C2155F /* LBZBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE7123A1C214DC500C2155F /* Build configuration list for PBXNativeTarget "LBZBar" */;
+			buildPhases = (
+				BCE712061C214DC500C2155F /* Sources */,
+				BCE712071C214DC500C2155F /* Frameworks */,
+				BCE712081C214DC500C2155F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBZBar;
+			productName = LBZBar;
+			productReference = BCE7120A1C214DC500C2155F /* LBZBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCE712251C214DC500C2155F /* LBZBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE7123D1C214DC500C2155F /* Build configuration list for PBXNativeTarget "LBZBarTests" */;
+			buildPhases = (
+				BCE712221C214DC500C2155F /* Sources */,
+				BCE712231C214DC500C2155F /* Frameworks */,
+				BCE712241C214DC500C2155F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCE712281C214DC500C2155F /* PBXTargetDependency */,
+			);
+			name = LBZBarTests;
+			productName = LBZBarTests;
+			productReference = BCE712261C214DC500C2155F /* LBZBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCE712301C214DC500C2155F /* LBZBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCE712401C214DC500C2155F /* Build configuration list for PBXNativeTarget "LBZBarUITests" */;
+			buildPhases = (
+				BCE7122D1C214DC500C2155F /* Sources */,
+				BCE7122E1C214DC500C2155F /* Frameworks */,
+				BCE7122F1C214DC500C2155F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCE712331C214DC500C2155F /* PBXTargetDependency */,
+			);
+			name = LBZBarUITests;
+			productName = LBZBarUITests;
+			productReference = BCE712311C214DC500C2155F /* LBZBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCE712021C214DC500C2155F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = kingly;
+				TargetAttributes = {
+					BCE712091C214DC500C2155F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					BCE712251C214DC500C2155F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BCE712091C214DC500C2155F;
+					};
+					BCE712301C214DC500C2155F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BCE712091C214DC500C2155F;
+					};
+				};
+			};
+			buildConfigurationList = BCE712051C214DC500C2155F /* Build configuration list for PBXProject "LBZBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCE712011C214DC500C2155F;
+			productRefGroup = BCE7120B1C214DC500C2155F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCE712091C214DC500C2155F /* LBZBar */,
+				BCE712251C214DC500C2155F /* LBZBarTests */,
+				BCE712301C214DC500C2155F /* LBZBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCE712081C214DC500C2155F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE712201C214DC500C2155F /* LaunchScreen.storyboard in Resources */,
+				BCE7121D1C214DC500C2155F /* Assets.xcassets in Resources */,
+				BCE712181C214DC500C2155F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE712241C214DC500C2155F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE7122F1C214DC500C2155F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCE712061C214DC500C2155F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE712751C214E0700C2155F /* split.c in Sources */,
+				BCE712701C214E0700C2155F /* QRCodeGenerator.m in Sources */,
+				BCE7121B1C214DC500C2155F /* LBZBar.xcdatamodeld in Sources */,
+				BCE7126E1C214E0700C2155F /* bitstream.c in Sources */,
+				BCE712741C214E0700C2155F /* rscode.c in Sources */,
+				BCE712731C214E0700C2155F /* qrspec.c in Sources */,
+				BCE712151C214DC500C2155F /* ViewController.m in Sources */,
+				BCE712711C214E0700C2155F /* qrencode.c in Sources */,
+				BCE712721C214E0700C2155F /* qrinput.c in Sources */,
+				BCE7126F1C214E0700C2155F /* mask.c in Sources */,
+				BCE712121C214DC500C2155F /* AppDelegate.m in Sources */,
+				BCE7120F1C214DC500C2155F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE712221C214DC500C2155F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE7122B1C214DC500C2155F /* LBZBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE7122D1C214DC500C2155F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE712361C214DC500C2155F /* LBZBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCE712281C214DC500C2155F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCE712091C214DC500C2155F /* LBZBar */;
+			targetProxy = BCE712271C214DC500C2155F /* PBXContainerItemProxy */;
+		};
+		BCE712331C214DC500C2155F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCE712091C214DC500C2155F /* LBZBar */;
+			targetProxy = BCE712321C214DC500C2155F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCE712161C214DC500C2155F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE712171C214DC500C2155F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCE7121E1C214DC500C2155F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE7121F1C214DC500C2155F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCE712381C214DC500C2155F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCE712391C214DC500C2155F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCE7123B1C214DC500C2155F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LBZBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LBZBar/ZBar64",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingly09.LBZBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCE7123C1C214DC500C2155F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LBZBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LBZBar/ZBar64",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingly09.LBZBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCE7123E1C214DC500C2155F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LBZBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingly09.LBZBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LBZBar.app/LBZBar";
+			};
+			name = Debug;
+		};
+		BCE7123F1C214DC500C2155F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LBZBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingly09.LBZBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LBZBar.app/LBZBar";
+			};
+			name = Release;
+		};
+		BCE712411C214DC500C2155F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LBZBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingly09.LBZBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LBZBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BCE712421C214DC500C2155F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LBZBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingly09.LBZBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LBZBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCE712051C214DC500C2155F /* Build configuration list for PBXProject "LBZBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE712381C214DC500C2155F /* Debug */,
+				BCE712391C214DC500C2155F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCE7123A1C214DC500C2155F /* Build configuration list for PBXNativeTarget "LBZBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE7123B1C214DC500C2155F /* Debug */,
+				BCE7123C1C214DC500C2155F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCE7123D1C214DC500C2155F /* Build configuration list for PBXNativeTarget "LBZBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE7123E1C214DC500C2155F /* Debug */,
+				BCE7123F1C214DC500C2155F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCE712401C214DC500C2155F /* Build configuration list for PBXNativeTarget "LBZBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE712411C214DC500C2155F /* Debug */,
+				BCE712421C214DC500C2155F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCE712191C214DC500C2155F /* LBZBar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCE7121A1C214DC500C2155F /* LBZBar.xcdatamodel */,
+			);
+			currentVersion = BCE7121A1C214DC500C2155F /* LBZBar.xcdatamodel */;
+			path = LBZBar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BCE712021C214DC500C2155F /* Project object */;
+}
