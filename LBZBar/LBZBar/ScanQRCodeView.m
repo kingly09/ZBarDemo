@@ -7,7 +7,7 @@
 //
 
 #import "ScanQRCodeView.h"
-#import "ColorUtil.h"
+
 #define kScreenWidth ([[UIScreen mainScreen]bounds].size.width)//屏幕宽度
 #define kScreenHeight ([[UIScreen mainScreen]bounds].size.height > [[UIScreen mainScreen]bounds].size.width?[[UIScreen mainScreen]bounds].size.height:[[UIScreen mainScreen]bounds].size.width)//屏幕高度
 
@@ -64,7 +64,7 @@
     UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [scanButton setTitle:@"取消" forState:UIControlStateNormal];
     [scanButton setTintColor:[UIColor whiteColor]];
-    [scanButton setBackgroundColor:[UIColor BtnBgColor]];
+    [scanButton setBackgroundColor:[UIColor blueColor]];
     scanButton.frame = CGRectMake(labIntroudction.frame.origin.x, 420, 120, 40);
     scanButton.layer.cornerRadius = 4;
     [scanButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
@@ -73,7 +73,7 @@
     UIButton * ptoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [ptoButton setTitle:@"相册" forState:UIControlStateNormal];
     [ptoButton setTintColor:[UIColor whiteColor]];
-    [ptoButton setBackgroundColor:[UIColor BtnBgColor]];
+    [ptoButton setBackgroundColor:[UIColor blueColor]];
     ptoButton.frame = CGRectMake(labIntroudction.frame.origin.x +labIntroudction.frame.size.width - 120, 420, 120, 40);
     ptoButton.layer.cornerRadius = 4;
     [ptoButton addTarget:self action:@selector(phoOverlayView:) forControlEvents:UIControlEventTouchUpInside];
