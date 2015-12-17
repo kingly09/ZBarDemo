@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)onClickShaoMiao:(id)sender;
 
 @end
 
