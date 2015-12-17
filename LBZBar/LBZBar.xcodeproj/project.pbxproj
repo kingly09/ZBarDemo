@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC2E06B41C224E4000611AD2 /* ScanQRCode_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2E06B31C224E4000611AD2 /* ScanQRCode_VC.m */; };
 		BC2E06B71C224F9F00611AD2 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2E06B61C224F9E00611AD2 /* ColorUtil.m */; };
+		BC2E06BA1C225E0200611AD2 /* ScanQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2E06B91C225E0200611AD2 /* ScanQRCode.m */; };
 		BCE7120F1C214DC500C2155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE7120E1C214DC500C2155F /* main.m */; };
 		BCE712121C214DC500C2155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE712111C214DC500C2155F /* AppDelegate.m */; };
 		BCE712151C214DC500C2155F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE712141C214DC500C2155F /* ViewController.m */; };
@@ -56,6 +57,8 @@
 		BC2E06B31C224E4000611AD2 /* ScanQRCode_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCode_VC.m; sourceTree = "<group>"; };
 		BC2E06B51C224F9E00611AD2 /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
 		BC2E06B61C224F9E00611AD2 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		BC2E06B81C225E0200611AD2 /* ScanQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCode.h; sourceTree = "<group>"; };
+		BC2E06B91C225E0200611AD2 /* ScanQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCode.m; sourceTree = "<group>"; };
 		BCE7120A1C214DC500C2155F /* LBZBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBZBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE7120E1C214DC500C2155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCE712101C214DC500C2155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				BCE712431C214E0700C2155F /* ZBar64 */,
 				BCE712101C214DC500C2155F /* AppDelegate.h */,
 				BCE712111C214DC500C2155F /* AppDelegate.m */,
+				BC2E06B81C225E0200611AD2 /* ScanQRCode.h */,
+				BC2E06B91C225E0200611AD2 /* ScanQRCode.m */,
 				BC2E06B21C224E4000611AD2 /* ScanQRCode_VC.h */,
 				BC2E06B31C224E4000611AD2 /* ScanQRCode_VC.m */,
 				BC2E06B51C224F9E00611AD2 /* ColorUtil.h */,
@@ -425,6 +430,7 @@
 				BCE712731C214E0700C2155F /* qrspec.c in Sources */,
 				BCE712151C214DC500C2155F /* ViewController.m in Sources */,
 				BC2E06B41C224E4000611AD2 /* ScanQRCode_VC.m in Sources */,
+				BC2E06BA1C225E0200611AD2 /* ScanQRCode.m in Sources */,
 				BCE712711C214E0700C2155F /* qrencode.c in Sources */,
 				BCE712721C214E0700C2155F /* qrinput.c in Sources */,
 				BCE7126F1C214E0700C2155F /* mask.c in Sources */,
