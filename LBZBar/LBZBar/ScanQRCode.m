@@ -7,7 +7,7 @@
 //
 
 #import "ScanQRCode.h"
-#import "ColorUtil.h"
+
 #import "ZBarSDK.h"
 #import "QRCodeGenerator.h"
 
@@ -17,9 +17,13 @@
 #define SIMULATOR 0
 #endif
 
-#define kScreenWidth ([[UIScreen mainScreen]bounds].size.width)//屏幕宽度
 
-@interface ScanQRCode ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,ZBarReaderDelegate>
+#define kScreenWidth ([[UIScreen mainScreen]bounds].size.width)//屏幕宽度
+#define kScreenHeight ([[UIScreen mainScreen]bounds].size.height > [[UIScreen mainScreen]bounds].size.width?[[UIScreen mainScreen]bounds].size.height:[[UIScreen mainScreen]bounds].size.width)//屏幕高度
+
+@interface ScanQRCode ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,ZBarReaderDelegate,ScanQRCodeViewDelegate>
+
+   
 
 @end
 
@@ -48,76 +52,14 @@
  * 初始化UI
  **/
 -(void)setInitUI{
-    
-    UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake((kScreenWidth-290)/2, 25, 290, 75)];
-    labIntroudction.backgroundColor = [UIColor clearColor];
-    labIntroudction.numberOfLines = 4;
-    labIntroudction.textColor=[UIColor whiteColor];
-    labIntroudction.text =@"将二维码图像置于矩形方框内,离手机摄像头10CM左右,系统会自动识别.";
-    labIntroudction.font = [UIFont boldSystemFontOfSize:15];
-    [self.view addSubview:labIntroudction];
-    
-    
-    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake((kScreenWidth-300)/2, 100, 300, 300)];
-    imageView.image = [UIImage imageNamed:@"pick_bg"];
-    [self.view addSubview:imageView];
-    
-    upOrdown = NO;
-    num =0;
-    _line = [[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth-220)/2, 110, 220, 2)];
-    _line.image = [UIImage imageNamed:@"line"];
-    [self.view addSubview:_line];
-    
-    timer = [NSTimer scheduledTimerWithTimeInterval:.02 target:self selector:@selector(animation1) userInfo:nil repeats:YES];
-    
-    
-    self.view.backgroundColor = [UIColor grayColor];
-    UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [scanButton setTitle:@"取消" forState:UIControlStateNormal];
-    [scanButton setTintColor:[UIColor whiteColor]];
-    [scanButton setBackgroundColor:[UIColor BtnBgColor]];
-    scanButton.frame = CGRectMake(labIntroudction.frame.origin.x, 420, 120, 40);
-    scanButton.layer.cornerRadius = 4;
-    [scanButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:scanButton];
-    
-    UIButton * ptoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [ptoButton setTitle:@"相册" forState:UIControlStateNormal];
-    [ptoButton setTintColor:[UIColor whiteColor]];
-    [ptoButton setBackgroundColor:[UIColor BtnBgColor]];
-    ptoButton.frame = CGRectMake(labIntroudction.frame.origin.x +labIntroudction.frame.size.width - 120, 420, 120, 40);
-    ptoButton.layer.cornerRadius = 4;
-    [ptoButton addTarget:self action:@selector(phoOverlayView:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:ptoButton];
 
-    
+    _scanView = [[ScanQRCodeView alloc] init];
+    _scanView.myDelegate = self;
+    _scanView.frame = CGRectMake(0, 0,kScreenWidth, kScreenHeight);
+    [self.view addSubview:_scanView];
 
 }
--(void)animation1
-{
-    if (upOrdown == NO) {
-        num ++;
-        _line.frame = CGRectMake((kScreenWidth-220)/2, 110+2*num, 220, 2);
-        if (2*num == 280) {
-            upOrdown = YES;
-        }
-    }
-    else {
-        num --;
-        _line.frame = CGRectMake((kScreenWidth-220)/2, 110+2*num, 220, 2);
-        if (num == 0) {
-            upOrdown = NO;
-        }
-    }
-    
-}
--(void)backAction
-{
-    
-    [self dismissViewControllerAnimated:YES completion:^{
-        [timer invalidate];
-    }];
-}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     if (SIMULATOR) {
@@ -160,7 +102,7 @@
     // Preview
     _preview =[AVCaptureVideoPreviewLayer layerWithSession:self.session];
     _preview.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    _preview.frame =CGRectMake((kScreenWidth-280)/2,110,280,280);
+    _preview.frame = [_scanView previewframe];
     [self.view.layer insertSublayer:self.preview atIndex:0];
     
     
@@ -186,15 +128,9 @@
     [_session stopRunning];
     [self dismissViewControllerAnimated:YES completion:^
      {
-         [timer invalidate];
+         [_scanView stopTimer];
+      
      }];
-}
-
-
-#pragma mark - 点击相册
--(void)phoOverlayView:(id)sender{
-
-    [self photoScan];
 }
 
 
@@ -231,7 +167,7 @@
         
         [_session stopRunning];
         [self dismissViewControllerAnimated:NO completion:^{
-            [timer invalidate];
+             [_scanView stopTimer];
             
             if ([_delegate respondsToSelector:@selector(captureQRCode:)])
             {
@@ -273,5 +209,21 @@
 }
 
 
+#pragma mark - ScanningViewDelegate
+/**
+ * 点击返回
+ */
+-(void)backAction{
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+          [_scanView stopTimer];
+     }];
+}
+/**
+ * 打开相册，读取扫描相片，读取二维码数据
+ */
+-(void)openPhotoAlbum{
+  [self photoScan];
+}
 
 @end

@@ -8,6 +8,8 @@
 @import UIKit;
 @import AVFoundation;
 
+#import "ScanQRCodeView.h"
+
 @protocol ScanQRCodeVCDelegate <NSObject>
 /**
  * 获得扫描到的二维码内容
@@ -17,11 +19,7 @@
 @end
 
 @interface ScanQRCode : UIViewController<AVCaptureMetadataOutputObjectsDelegate>
-{
-    int num;
-    BOOL upOrdown;
-    NSTimer * timer;
-}
+
 @property (strong,nonatomic)AVCaptureDevice * device;
 @property (strong,nonatomic)AVCaptureDeviceInput * input;
 @property (strong,nonatomic)AVCaptureMetadataOutput * output;
@@ -30,6 +28,7 @@
 @property (nonatomic, strong) UIImageView * line;
 @property (nonatomic, weak) id<ScanQRCodeVCDelegate> delegate;
 
-@property (strong,nonatomic) UIImagePickerController *picker;
+
+@property (strong,nonatomic)  ScanQRCodeView *scanView;
 
 @end
